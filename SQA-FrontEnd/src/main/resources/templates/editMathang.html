@@ -1,0 +1,57 @@
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<body>
+	<div style="width: 30%; margin-left: 35%; margin-top: 80px">
+		<form method="POST">
+			
+			<div class="form-group">
+				<label for="name">ID</label> <input type="text" class="form-control"
+					th:value="${mathang.id}" name="id" disabled="true"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Tên</label> <input type="text"
+					class="form-control" th:value="${mathang.ten}" required
+					name="ten">
+			</div>
+			<div class="form-group">
+				<label for="name">Giá tiền</label> <input type="text"
+					class="form-control" th:value="${mathang.giatien}" required
+					name="giatien">
+			</div>
+			
+			<div class="form-group">
+				<label for="name">Ngày nhập</label> <input type="date"
+					class="form-control" th:value="${mathang.ngaynhap}" required
+					name="ngaynhap">
+			</div>
+			<div class="form-group">
+				<label for="name">Hạn sử dụng</label> <input type="text"
+					class="form-control" th:value="${mathang.hansd}" required
+					name="hansd"
+					 />
+			</div>
+			<div class="form-group">
+				<label for="name">Loại mặt hàng</label> <input type="text"
+					class="form-control" th:value="${mathang.loaiMH}" required
+					name="loaiMH">
+			</div>
+			<div class="form-group">
+				<label for="name">Số lượng</label> <input type="text"
+					class="form-control" th:value="${mathang.soluong}" required
+					name="soluong">
+			</div>
+			<div class="form-group">
+				<label for="name">Quản lí id</label> <input type="text"
+					class="form-control" th:value="${mathang.quanli.thanhvien.id}" required
+					name="id_quanli">
+			</div>
+			<button type="submit" class="btn btn-success">Xác nhận</button>
+			<a th:href="@{/nvbanhang}" class="btn btn-success"
+				style="margin-left: 50px">Hủy</a>
+		</form>
+	</div>
+</body>

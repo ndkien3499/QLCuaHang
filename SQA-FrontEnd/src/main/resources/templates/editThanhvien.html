@@ -1,0 +1,63 @@
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<body>
+	<div style="width: 30%; margin-left: 35%; margin-top: 80px">
+		<form method="POST">
+			<div class="form-group">
+				<label for="name">Thanh vien id</label> <input type="text" class="form-control"
+					th:value="${thanhvien.id}" name="id" disabled="true"/>
+			</div>
+
+			<div class="form-group">
+				<label for="name">username</label> <input type="text"
+					class="form-control" th:value="${thanhvien.username}" required
+					name="username">
+			</div>
+			<div class="form-group">
+				<label for="name">password</label> <input type="text"
+					class="form-control" th:value="${thanhvien.password}"
+					required name="password" />
+			</div>
+			<div class="form-group">
+				<label for="name">vai tro</label> <input type="text"
+					class="form-control" th:value="${thanhvien.vaitro}" required
+					name="vaitro">
+			</div>
+			<div class="form-group">
+				<label for="name">ten</label> <input type="text"
+					class="form-control" th:value="${thanhvien.ten}" required
+					name="ten"
+					 />
+			</div>
+			<div class="form-group">
+				<label for="name">date</label> <input type="date"
+					class="form-control" th:value="${thanhvien.date}" required
+					name="date">
+			</div>
+			<div class="form-group">
+				<label for="name">email</label> <input type="text"
+					class="form-control" th:value="${thanhvien.email}" required
+					name="email"
+					 />
+			</div>
+			<div class="form-group">
+				<label for="name">sdt</label> <input type="text"
+					class="form-control" th:value="${thanhvien.sdt}" required
+					name="sdt">
+			</div>
+			<div class="form-group">
+				<label for="name">dia chi</label> <input type="text"
+					class="form-control" th:value="${thanhvien.diachi}" required
+					name="diachi"
+					 />
+			</div>
+			<button type="submit" class="btn btn-success">Submit</button>
+			<a th:href="@{/thanhvien}" class="btn btn-success"
+				style="margin-left: 50px">Cancel</a>
+		</form>
+	</div>
+</body>

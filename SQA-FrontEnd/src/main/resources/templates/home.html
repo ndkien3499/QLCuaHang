@@ -1,0 +1,86 @@
+<html>
+<title>Store Management</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">                                                              
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="#home" class="w3-bar-item w3-button">Trang chủ quản lý</a>
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="w3-right w3-hide-small">
+            <a th:href= "@{/nvbanhang}" class="w3-bar-item w3-button">Quản lí nhân viên</a>
+            <a th:href="@{/mathang}" class="w3-bar-item w3-button">Quản lí mặt hàng</a>
+            <a th:href="@{/xemthongke}" class="w3-bar-item w3-button">Xem thống kê</a>       
+         
+          </div>
+        </div>
+      </div>
+      <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="image/homeImage2.jpg" alt="Architecture" width="1500" height="800">
+      </header>
+      <div class="w3-container w3-padding-32" id="projects">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Hot</h3>
+      </div>
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Summer Shirt</div>
+            <img src="image/SummerShirt.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Jean</div>
+            <img src="image/Jean.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Oversize</div>
+            <img src="image/Oversize.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Sneaker</div>
+            <img src="image/Sneaker.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Váy</div>
+            <img src="image/Skirt.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Baggy</div>
+            <img src="image/baggy.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Mũ</div>
+            <img src="image/Hat.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Boot</div>
+            <img src="image/Boot.jpg" alt="House" style="width:300px;height: 200px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="w3-container">
+        <img src="image/homeImage.jpg" class="w3-image" style="width:100%">
+      </div>
+      <footer class="w3-center w3-black w3-padding-16">
+        <p>Website developed by group 10</p>
+      </footer>
+    </body>
+    </html>
